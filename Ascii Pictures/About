@@ -1,1 +1,3 @@
-A Python project I did for extra credit in which this Python program takes any picture and turns it into ascii characters.
+A Python project I did for extra credit in which this Python program takes any picture and turns it into ascii characters. 
+Utilized standard functions that allow users to specify the image file, and to print the converted image. Also leveraged functions
+from imported modules in order to properly convert the image into ascii characters. 
