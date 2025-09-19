@@ -1,3 +1,4 @@
 This is a C# project I developed to facilitate a task at work. 
 The project consists of two C# programming files needed to create the windows form and handle user data required for 
-altering the data in the notes text file. 
+altering the data in the notes text file. Utilized a function for handling userdata and used file based functions for 
+creating a text file and writing the altered notes file to that text file. 
