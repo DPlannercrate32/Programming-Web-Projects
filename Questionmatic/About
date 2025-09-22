@@ -1,1 +1,4 @@
 This is a web application I developed at my College job as an Assistant Programmer. 
+My supervisor needed it for a course he was teaching. I leveraged my learned back-end & front-end coding skills,
+to develop the application that verifies users, collects user input data from a webpage and stores in a relational database table,
+then finally queries certain user data from the database in order to display it in a backend webpage. 
