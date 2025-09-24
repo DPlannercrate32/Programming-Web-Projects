@@ -1,1 +1,3 @@
-College project I made in one of my Computer Science courses where I 
+College project I made in one of my Computer Science courses where I learned C++ programming. Wanted to make a Tic Tac Toe game
+where the CPU never loses. Defined methods and data properties in a class to analyze the moves of the human and the CPU to 
+determine how the game will run. 
