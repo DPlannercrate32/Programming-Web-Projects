@@ -1,1 +1,4 @@
-This project represents my first experience with C#. 
+This project represents my first experience with C# post college graduation. Wanted to code in C# and in a .net environment for 
+first time since I've mainly programmed in C and C++ on linux machines during my college years. This program creates a 
+windows form that collects only URL text. Utilized handler functions to grab and manage text that are dragged into the 
+windows form, as well as functions that handles options that are clicked in the windows menu. 
