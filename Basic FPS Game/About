@@ -1,1 +1,4 @@
-This was a college project where I experience using Open GL functions for the first time to create a video game. 
+This was a college project where I experience using Open GL functions for the first time to create a video game. This project represents
+a first person shooter game where you're shooting sphere shaped monsters in a maze. I leveraged Open GL functions to create world, player weapon,
+and monters. With the Open GL functions, I was able to also animate & managed the monster's movements. Utilized functions from the math library, to
+handle game logic and timing. 
