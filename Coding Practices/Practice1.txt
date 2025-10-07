@@ -1,1 +1,203 @@
+Quick test: In Python, how would you store your name and age in variables?
+
+My name would be stored as a string and my age would be stored as an integer..
+
+Quick test: Write a Python snippet that prints all numbers 1–5.
+
+List[] = {1, 2, 3, 4, 5} 
+For x in List:
+	Print x
+
+Quick test: Python function that takes two numbers and returns their sum.
+
+Define function Sum(a, b):
+	C = a + b
+	Return C
+
+Quick test: Create a Python dictionary for a student with name, age, grade.
+
+dict[] = {“name”, “age”, “grade”}
+
+Quick test: Write a Python function that prints numbers 1 to n using recursion.
+
+define function recurse():
+	x = x + 1
+	print x
+	return recurse()
+	
+Quick test: Create a Python class Car with attribute color and a method drive() that prints "Driving...".
+
+Class Car:
+	Color = “red”
+	define function drive():
+		print “Driving…”
+		return
+
+Quick test: Write a Python snippet to read a file called data.txt and print its contents.
+
+content = File.open(“data.txt”)
+print content
+content = File.close
+
+
+
+-Write a function factorial(n) that returns the factorial using recursion.
+
+def factorial(n):
+	if(n < 1):
+return
+product *= n
+factorial(n - 1)
+
+-Create a Dog class with attribute name and method bark() that prints “Woof!”.
+
+class Dog:
+_init_(self, name):
+self.name = “Jeff”
+
+def bark():
+print(“Woof!”)
+
+-Write a snippet that reads from data.txt and counts how many lines are in it.		
+
+fd = open(data.txt)
+
+rd = read(fd)
+
+for x in rd:
+	if(x = ‘\n’)
+		count++
+print(count)
+
+-Write a program that checks if a number is prime.
+
+[My idea is that if a number can’t be divided by both 2 or 3, and it’s greater than 3, then it’s a prime. I don’t know how to execute this in Python code, cause I don’t remember how to check for remainders after division, while in C/C#, I can use the mod key “%” to do that. For example, 4 % 2 = 0, while 4 % 3 is 1, something like that. ]
+
+
+-Write a function that takes a list and returns it reversed
+
+def reverse(list[]]):
+	len = length(list)
+	while(len >= 0)
+		list[len] = backwards[i]
+		len - - 
+i ++ 
+return backwards 
+
+
+
+Even or Odd
+Write a function is_even(n) that returns True if a number is even, False if odd.
+
+def is_even(n):
+	if(n % 2 == 0)
+		return True
+	else 
+		return False
+
+Sum of a List
+Write a function sum_list(lst) that takes a list of numbers and returns their sum. Don’t use Python’s built-in sum().
+
+def sum_list(lst):
+	i = 0
+	sum = 0
+	while(lst[i])
+		sum += list[i]
+		i += 1
+	return sum
+
+
+Count Vowels
+Write a function count_vowels(s) that counts how many vowels (a, e, i, o, u) are in a string.
+
+def count_vowels(s):
+	count = 0
+	for x in s:
+		if(x == ‘a’ || x == ‘e’ || x == ‘i’ || x == ‘o’ || x == ‘u’)
+			count += 1
+	return count
+
+
+
+
+
+Multiplication Table
+ Write code that prints the multiplication table for numbers 1 through 5 (like a grid).
+
+
+row = 1
+col = 1
+
+while(col < 6):
+	while(row <= 6):
+		if(row == 6)
+			row = 0
+			break
+		print(col * row)
+		row += 1
+	col += 1
+	print(‘\n’)
+
+Unique Elements
+Write a function unique(lst) that takes a list and returns another list with only the unique elements (no duplicates).
+
+[Can’t do. I need to figure out the type of list to figure out how to deal with checking for uniqueness]
+
+Word Frequency
+Write code that reads a string and counts how many times each word appears, then prints the results.
+
+[Not sure if I can figure this out in a timely manor on an interview exam, but my idea was to add each word to a dictionary with the word equaling the key and its value equaling its frequency number.]
+
+
+
+
+
+
+Write a function reverse_list(lst) that takes a list of numbers and returns a new list with the elements in reverse order.
+def reverse_list(lst):
+	i = len(lst)
+	a = 0
+	revlst = []
+	while(i > -1):
+		revlst[a] = lst[i]
+a += 1
+i -= 1
+return revisit
+
+Write a recursive function factorial(n) that returns the factorial of n.
+def factorial(n):
+if(n <= 1):
+return n
+n * return (n - 1)  
+
+Write a function count_evens(lst) that returns the number of even numbers in a list.
+
+def count_evens(lst):
+	count = 0
+	foreach x in lst:
+		if(x % 2 == 0)
+			count++
+	return count
+
+
+
+
+
+Write a function word_frequency(text) that returns a dictionary with each word as the key and its count as the value.
+
+def word_frequency(text):
+	dict = []
+	text.split()
+	foreach x in text:
+	#I stopped here cause I couldn’t figure this one out chatgpt lol
+
+Write a function unique(lst) that returns a new list with only the unique elements, in the order they first appear.
+
+def unique(lst):
+	lst2 = []
+	foreach x in lst:
+		if x is not in lst2:
+lst2.append(x)
+return lst2 
+
 
