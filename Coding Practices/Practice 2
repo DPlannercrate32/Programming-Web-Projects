@@ -31,3 +31,15 @@ def sum_evens(lst):
        if(x % 2 == 0)
           total += x
     return total
+
+Write a function is_palindrome(word) that returns True if a word reads the same forward and backward.
+
+def is_palindrome(word):
+    i = lens(word) - 1
+    j = 0
+    wordcpy = []
+    while(i > -1):
+       wordcpy[j] = word[i]
+       i -= 1
+       j += 1
+    
