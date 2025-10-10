@@ -23,3 +23,11 @@ def find_max(lst):
           max = x
     return max
 
+Write a function sum_evens(lst) that adds up only the even numbers in a list and returns the total.
+
+def sum_evens(lst):
+    total = 0
+    for x in lst:
+       if(x % 2 == 0)
+          total += x
+    return total
