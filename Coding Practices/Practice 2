@@ -42,4 +42,13 @@ def is_palindrome(word):
        wordcpy[j] = word[i]
        i -= 1
        j += 1
+    j = 0
+    while(j < lens(word) - 1):
+       if(wordcpy[j] == word[j]):
+          continue
+       if(wordcpy[j] != word[j):
+          return False
+       j += 1
+    return True
+
     
