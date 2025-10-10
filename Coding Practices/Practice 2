@@ -2,7 +2,7 @@ Write a function fizzbuzz(n) that prints numbers from 1 to n.
 
 def fizzbuzz(n):
    count = 1
-   while(count < n + 1):
+   while(count < n):
       if(count % 3 == 0):
          print("Fizz")
       else if(count % 5 == 0):
@@ -11,4 +11,4 @@ def fizzbuzz(n):
          print("FizzBuzz")
       else:
          print(count)
-   count += 1
+      count += 1
