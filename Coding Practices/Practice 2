@@ -51,4 +51,14 @@ def is_palindrome(word):
        j += 1
     return True
 
-    
+  Write a function char_frequency(s) that returns a dictionary showing how many times each character appears in a string.
+
+def char_frequency(s):
+    i = 0
+    for x in s:
+       for(i < lens(s) - 1):
+          if(x == s[i]):
+             count += 1
+       s{x} = count
+   return s
+
