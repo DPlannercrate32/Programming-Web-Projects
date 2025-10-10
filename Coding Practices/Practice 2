@@ -12,3 +12,14 @@ def fizzbuzz(n):
       else:
          print(count)
       count += 1
+   return
+
+Write a function find_max(lst) that manually returns the largest number in a list (without using max()).
+
+def find_max(lst):
+    max = 0
+    for x in lst:
+       if(x > max):
+          max = x
+    return max
+
