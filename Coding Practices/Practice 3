@@ -1,0 +1,21 @@
+Write a function sum_digits(n) that takes an integer n and returns the sum of its digits.
+
+def sum_digits(n):
+   n = strconvert(n)
+   total = 0
+   for x in n:
+      total =+ intconvert(x)
+   return total 
+
+Write a function count_upper(s) that counts how many uppercase letters are in a string.
+
+def count_upper(s):
+   count = 0 
+   for x in s:
+      if x >= 65 && x <= 90:
+         count += 0
+   return count
+
+Write a function fibonacci(n) that returns a list of the first n Fibonacci numbers.
+
+
