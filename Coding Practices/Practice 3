@@ -18,4 +18,5 @@ def count_upper(s):
 
 Write a function fibonacci(n) that returns a list of the first n Fibonacci numbers.
 
-
+def fibonacci(n):
+    
