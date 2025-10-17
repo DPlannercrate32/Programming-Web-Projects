@@ -36,3 +36,16 @@ def remove_duplicates(s):
       if(x not in lst):
          lst.append(x)
    return lst
+
+Write a function primes_up_to(n) that returns a list of all prime numbers from 2 up to n.
+
+def primes_p_to(n):
+   lst = []
+   while(n > 2):
+      if(n % 3 == 0 or n % 2 == 0):
+         n -= 1
+         continue
+      else:
+         lst.append(n)
+         n -= 1
+   return lst
