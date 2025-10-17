@@ -27,3 +27,12 @@ def fibonacci(n):
       else:
          n -= 1
    return lst
+
+Write a function remove_duplicates(s) that returns a string with only the first occurrence of each character.
+
+def remove_duplicates(s):
+   lst = []
+   for x in s:
+      if(x not in lst):
+         lst.append(x)
+   return lst
