@@ -22,4 +22,8 @@ def fibonacci(n):
     lst = []
     while(n > 0):
       if((n - 1) + (n - 2) == n):
+         lst.append(n - 1)
          n = n - 1
+      else:
+         n -= 1
+   return lst
