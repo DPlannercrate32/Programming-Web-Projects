@@ -1,0 +1,9 @@
+Write a function count_negatives(lst) that takes a list of numbers and returns how many are negative.
+
+Write a function cumulative_sum(lst) that returns a new list where each element is the sum of all previous elements plus itself.
+
+Write a function second_largest(lst) that returns the second largest number in a list.
+
+Write a function reverse_words(sentence) that reverses each word in a sentence but keeps the word order.
+
+Write a function merge_sorted(lst1, lst2) that merges two sorted lists into a new sorted list manually (don’t use sort() or + tricks).
