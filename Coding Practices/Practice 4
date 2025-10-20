@@ -21,6 +21,16 @@ def cumulative_sum(lst):
 
 Write a function second_largest(lst) that returns the second largest number in a list.
 
+def second_largest(lst):
+    max = 0
+    max2 = 0
+    for x in lst:
+       if(x > max):
+          max = x
+       elif(max > x and x > max2):
+          max2 = x
+    return max2
+
 Write a function reverse_words(sentence) that reverses each word in a sentence but keeps the word order.
 
 Write a function merge_sorted(lst1, lst2) that merges two sorted lists into a new sorted list manually (don’t use sort() or + tricks).
