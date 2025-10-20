@@ -1,6 +1,23 @@
 Write a function count_negatives(lst) that takes a list of numbers and returns how many are negative.
 
+def count_negatives(lst):
+   count = 0
+   for x in lst:
+      if(x < 0):
+         count += 1
+   return count
+
 Write a function cumulative_sum(lst) that returns a new list where each element is the sum of all previous elements plus itself.
+
+def cumulative_sum(lst):
+   i = 0
+   lst2 = []
+   while(i < len(lst) - 2):
+      if(i == 0):
+         lst2.append(lst[i])
+      lst2.append(lst[i] + lst[i + 1])
+      i += 1
+   return lst2
 
 Write a function second_largest(lst) that returns the second largest number in a list.
 
