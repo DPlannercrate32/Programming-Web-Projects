@@ -42,3 +42,12 @@ def reverse_words(sentence):
     return str1
 
 Write a function merge_sorted(lst1, lst2) that merges two sorted lists into a new sorted list manually (don’t use sort() or + tricks).
+
+def merge_sorted(lst1, lst2):
+    ordered = []
+    lst1.append(lst2)
+    count = len(lst1)
+    i = 0 
+    while(i < count):
+       for x in lst
+    
