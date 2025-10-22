@@ -48,6 +48,16 @@ def merge_sorted(lst1, lst2):
     lst1.append(lst2)
     count = len(lst1)
     i = 0 
-    while(i < count):
-       for x in lst
+    while(i < len(lst1)):
+       for x in lst1:
+          if(x not in ordered):
+             for y in lst1:
+                if(x < y and y not in ordered):
+                   lesser = true
+                else:
+                   lesser = false
+           if(lesser == true):
+              ordered.append(x)
+              i += 1
+            
     
