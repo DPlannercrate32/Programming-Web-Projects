@@ -1,1 +1,44 @@
+🧠 HARDER LOGIC (31–40): Nested Loops, Algorithms, Recursion
+
+
+
+Write a function is_prime(n) that returns True if n is a prime number.
+
+
+
+Write a function primes_up_to(n) that returns a list of primes up to n.
+
+
+
+Write a function matrix_add(a, b) that adds two 2D lists (matrices).
+
+
+
+Write a function transpose(matrix) that returns the transpose of a 2D list.
+
+
+
+Write a function flatten(lst) that flattens a 2D list into a 1D list.
+
+
+
+Write a function cumulative_sum(lst) that returns cumulative totals in a new list.
+
+
+
+Write a function find_common(lst1, lst2) that returns a list of common elements.
+
+
+
+Write a function is_anagram(a, b) that checks if two words are anagrams.
+
+
+
+Write a function binary_search(lst, target) that manually searches for target in a sorted list.
+
+
+
+Write a recursive function sum_nested(lst) that sums all numbers, even in nested lists (e.g., [1, [2, 3], 4] → 10).
+
+
 
