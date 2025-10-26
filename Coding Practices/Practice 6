@@ -1,1 +1,60 @@
 
+⚙️ MEDIUM (16–30): Logic, Nested Loops, Lists, and Strings
+
+16. Write a function factorial(n) that returns the factorial using recursion.
+
+
+
+Write a function unique(lst) that returns a list with only unique elements.
+
+
+
+Write a function count_uppercase(s) that counts uppercase letters.
+
+
+
+Write a function palindrome(s) that returns True if s reads the same backward.
+
+
+
+Write a function fibonacci(n) that returns a list of the first n Fibonacci numbers.
+
+
+
+Write a function merge_sorted(lst1, lst2) that merges two sorted lists.
+
+
+
+Write a function word_frequency(s) that returns a dictionary of word counts.
+
+
+
+Write a function char_frequency(s) that returns a dictionary of character counts.
+
+
+
+Write a function remove_duplicates(s) that removes duplicate characters from a string.
+
+
+
+Write a function count_words(s) that counts how many words are in a string.
+
+
+
+Write a function sum_evens(lst) that adds up only even numbers.
+
+
+
+Write a function find_index(lst, value) that returns the index of value manually (no .index()).
+
+
+
+Write a function second_largest(lst) that returns the second largest number.
+
+
+
+Write a function rotate_list(lst, n) that rotates the list by n positions.
+
+
+
+Write a function replace_vowels(s, ch) that replaces all vowels in s with character ch.
