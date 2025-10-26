@@ -1,21 +1,39 @@
-Write a function is_even(n) that returns True if a number is even.
+1. Write a function is_even(n) that returns True if a number is even.
 
 
 
-Write a function sum_list(lst) that returns the sum of all elements.
+2. Write a function sum_list(lst) that returns the sum of all elements.
 
 
 
-Write a function count_vowels(s) that returns how many vowels are in a string.
+3. Write a function count_vowels(s) that returns how many vowels are in a string.
 
 
 
-Write a function max_of_two(a, b) that returns the larger number.
+4. Write a function max_of_two(a, b) that returns the larger number.
 
 
 
-Write a function square_list(lst) that returns a new list of each element squared.
+5. Write a function square_list(lst) that returns a new list of each element squared.
 
 
 
-Write a function count_positives(lst) that counts how many positive numbers are in a list.
+6. Write a function count_positives(lst) that counts how many positive numbers are in a list.
+
+
+
+7. Write a function find_min(lst) that manually returns the smallest number.
+
+
+
+8. Write a function reverse_string(s) that returns the reverse of a string.
+
+
+
+9. Write a function multiply_list(lst) that multiplies all numbers in a list.
+
+
+
+10. Write a function is_leap_year(year) that returns True if the year is a leap year.
+
+
