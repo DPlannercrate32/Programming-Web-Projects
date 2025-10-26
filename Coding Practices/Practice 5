@@ -1,3 +1,5 @@
+🧩 EASY (1–15): Core Loops, Lists, Strings, Conditionals
+
 1. Write a function is_even(n) that returns True if a number is even.
 
 
@@ -35,5 +37,24 @@
 
 
 10. Write a function is_leap_year(year) that returns True if the year is a leap year.
+
+
+11. Write a function sum_digits(n) that returns the sum of all digits in an integer.
+
+
+
+12. Write a function count_spaces(s) that counts how many spaces are in a string.
+
+
+
+13. Write a function list_contains(lst, target) that returns True if the target appears in the list.
+
+
+
+14. Write a function average(lst) that returns the average of numbers in a list.
+
+
+
+15. Write a function first_and_last(lst) that returns a tuple of the first and last elements.
 
 
