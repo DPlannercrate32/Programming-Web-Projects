@@ -1,1 +1,21 @@
+Write a function is_even(n) that returns True if a number is even.
 
+
+
+Write a function sum_list(lst) that returns the sum of all elements.
+
+
+
+Write a function count_vowels(s) that returns how many vowels are in a string.
+
+
+
+Write a function max_of_two(a, b) that returns the larger number.
+
+
+
+Write a function square_list(lst) that returns a new list of each element squared.
+
+
+
+Write a function count_positives(lst) that counts how many positive numbers are in a list.
