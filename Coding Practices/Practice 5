@@ -2,39 +2,75 @@
 
 1. Write a function is_even(n) that returns True if a number is even.
 
-
+def is_even(n):
+   if(n % 2 == 0):
+      return True
+   else:
+      return False
 
 2. Write a function sum_list(lst) that returns the sum of all elements.
 
-
+def sum_list(lst):
+   total = 0
+   for x in lst:
+      total += x
+   return total
 
 3. Write a function count_vowels(s) that returns how many vowels are in a string.
 
-
+def count_vowels(s):
+   count = 0 
+   for x in s:
+      if(x == 'a' or x == 'e' or x == 'i' or x == 'o' or x == 'u'):
+         count += 1
+   return count
 
 4. Write a function max_of_two(a, b) that returns the larger number.
 
-
+def max_of_two(a, b):
+   if(a > b):
+      return a
+   else: 
+      return b
 
 5. Write a function square_list(lst) that returns a new list of each element squared.
 
-
+def square_list(lst):
+   lstsq = []
+   for x in lst:
+      lstsq.append(x**2)
+   return lstsq
 
 6. Write a function count_positives(lst) that counts how many positive numbers are in a list.
 
-
-
+def count_positives(lst):
+   count = 0
+   for x in lst:
+      if(x > 0)
+         count += 1
+   return count
 7. Write a function find_min(lst) that manually returns the smallest number.
 
-
+def find_min(lst):
+   min = 0
+   for x in lst:
+      if(x <  
 
 8. Write a function reverse_string(s) that returns the reverse of a string.
 
-
-
+def reverse_string(s):
+   a = ''
+   i = len(s) - 1
+   while(i >= 0):
+      a.join(s[i])
+      i -= 1
+   return a
 9. Write a function multiply_list(lst) that multiplies all numbers in a list.
 
-
+def multiply_list(lst):
+   total = 1
+   for x in lst:
+      total *= x
 
 10. Write a function is_leap_year(year) that returns True if the year is a leap year.
 
