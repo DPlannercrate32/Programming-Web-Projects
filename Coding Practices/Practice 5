@@ -83,7 +83,9 @@ def sum_digits(n):
     i = n
     total = 0
     while(i > 0):
-       n // 10
+       total += (n % 10)
+       n //= 10
+    return total
 
 12. Write a function count_spaces(s) that counts how many spaces are in a string.
 
