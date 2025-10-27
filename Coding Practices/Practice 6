@@ -3,43 +3,76 @@
 
 16. Write a function factorial(n) that returns the factorial using recursion.
 
+def factorial(n):
+   total = 0
+   i = 1
+   while(i < n):
+      total *= i
+   return total
 
+17. Write a function unique(lst) that returns a list with only unique elements.
 
-Write a function unique(lst) that returns a list with only unique elements.
+def unique(lst):
+   unilst = []
+   for x in lst:
+      if(x not in lst):
+         unilst.append(x)
+   return unilst
 
+18. Write a function count_uppercase(s) that counts uppercase letters.
 
+def count_uppercase(s):
+   count = 0
+   for x in s:
+      if(x >= 65 and x <= 90):
+         count += 1
 
-Write a function count_uppercase(s) that counts uppercase letters.
+19. Write a function palindrome(s) that returns True if s reads the same backward.
 
+def palindrome(s):
+   
 
+20. Write a function fibonacci(n) that returns a list of the first n Fibonacci numbers.
 
-Write a function palindrome(s) that returns True if s reads the same backward.
-
-
-
-Write a function fibonacci(n) that returns a list of the first n Fibonacci numbers.
-
-
+def fibonacci(n):
+   
 
 Write a function merge_sorted(lst1, lst2) that merges two sorted lists.
 
-
+def merge_sorted(lst1, lst2):
+   
 
 Write a function word_frequency(s) that returns a dictionary of word counts.
 
-
+def word_frequency(s):
+  s.split(" ")
+  count = 0
+  dict = {}
+  for x in s:
+     
 
 Write a function char_frequency(s) that returns a dictionary of character counts.
 
-
+def char_frequencey(s):
+  count 
+  dict = {}
+  for x in s:
 
 Write a function remove_duplicates(s) that removes duplicate characters from a string.
 
-
+def remove_duplicates(s):
+   t = ""
+   for x in s:
+      if(x not in t):
+         t += x
 
 Write a function count_words(s) that counts how many words are in a string.
 
-
+def count_words(s):
+   count = 0
+   s.split(" ")
+   for x in s:
+      count += 1
 
 Write a function sum_evens(lst) that adds up only even numbers.
 
