@@ -37,12 +37,12 @@ def palindrome(s):
 def fibonacci(n):
    
 
-Write a function merge_sorted(lst1, lst2) that merges two sorted lists.
+21. Write a function merge_sorted(lst1, lst2) that merges two sorted lists.
 
 def merge_sorted(lst1, lst2):
    
 
-Write a function word_frequency(s) that returns a dictionary of word counts.
+22. Write a function word_frequency(s) that returns a dictionary of word counts.
 
 def word_frequency(s):
   s.split(" ")
@@ -51,14 +51,14 @@ def word_frequency(s):
   for x in s:
      
 
-Write a function char_frequency(s) that returns a dictionary of character counts.
+23. Write a function char_frequency(s) that returns a dictionary of character counts.
 
 def char_frequencey(s):
   count 
   dict = {}
   for x in s:
 
-Write a function remove_duplicates(s) that removes duplicate characters from a string.
+24. Write a function remove_duplicates(s) that removes duplicate characters from a string.
 
 def remove_duplicates(s):
    t = ""
@@ -66,7 +66,7 @@ def remove_duplicates(s):
       if(x not in t):
          t += x
 
-Write a function count_words(s) that counts how many words are in a string.
+25. Write a function count_words(s) that counts how many words are in a string.
 
 def count_words(s):
    count = 0
@@ -74,20 +74,48 @@ def count_words(s):
    for x in s:
       count += 1
 
-Write a function sum_evens(lst) that adds up only even numbers.
+26. Write a function sum_evens(lst) that adds up only even numbers.
 
+def sum_evens(lst):
+   total
+   for x in lst:
+      if(x % 2 == 0):
+         total += x
 
+27. Write a function find_index(lst, value) that returns the index of value manually (no .index()).
 
-Write a function find_index(lst, value) that returns the index of value manually (no .index()).
+def find_index(lst, value):
+    i = 0 
+    length = len(lst) - 1
+    while(i < length):
+       if(lst[i] == value)
+          return i
+       else
+          i += 1
 
+28. Write a function second_largest(lst) that returns the second largest number.
 
+def second_largets(lst):
+    max = float(-inf)
+    max2 = float(-inf)
+       for x in lst:
+          if(x > max):
+             max2 = max
+             max = x
+    return max2
+             
 
-Write a function second_largest(lst) that returns the second largest number.
+29. Write a function rotate_list(lst, n) that rotates the list by n positions.
 
+def rotate_list(lst, n):
+    # I don't understand the idea of rotating elements in a list
 
+30. Write a function replace_vowels(s, ch) that replaces all vowels in s with character ch.
 
-Write a function rotate_list(lst, n) that rotates the list by n positions.
-
-
-
-Write a function replace_vowels(s, ch) that replaces all vowels in s with character ch.
+def replace_vowels(s, ch) #assuming s is a string
+   str1 = ""
+   for x in s:
+      if(x == 'a' or x == 'i' or x == 'o' or x == 'u'):
+         str1 += 'ch'
+      else
+         str1 += x 
