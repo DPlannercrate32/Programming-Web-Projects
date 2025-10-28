@@ -2,13 +2,15 @@
 
 
 
-Write a function is_prime(n) that returns True if n is a prime number.
+31. Write a function is_prime(n) that returns True if n is a prime number.
 
-
+def is_prime(n):
+   
 
 Write a function primes_up_to(n) that returns a list of primes up to n.
 
-
+def primes_up_to(n):
+   
 
 Write a function matrix_add(a, b) that adds two 2D lists (matrices).
 
