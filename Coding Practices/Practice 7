@@ -5,7 +5,15 @@
 31. Write a function is_prime(n) that returns True if n is a prime number.
 
 def is_prime(n):
-   
+   count = 2
+   if(n >= 0 and n <= 3):
+      return True
+   while(count <= n ^ 0.5f):
+      if(n % count == 0):
+         return False
+      else
+         count += 1
+   return True
 
 Write a function primes_up_to(n) that returns a list of primes up to n.
 
