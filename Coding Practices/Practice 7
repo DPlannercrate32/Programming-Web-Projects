@@ -21,7 +21,10 @@ def primes_up_to(n):
    prm = []
    count = 0 
    while(count < n):
-     
+      if(count < 4):
+         prm.append(count)
+      else:
+         
       
 
 Write a function matrix_add(a, b) that adds two 2D lists (matrices).
