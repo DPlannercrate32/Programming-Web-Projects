@@ -40,8 +40,10 @@ Write a function matrix_add(a, b) that adds two 2D lists (matrices).
        c = []
        count = len(a) - 1
        i = 0
+       j = 0 
        while(i < count):
-          c.append(a[i][i] + b[i][i])
+          while(j < count):
+             c.append(a[i][j] + b[i][j])
 
 Write a function transpose(matrix) that returns the transpose of a 2D list.
 
