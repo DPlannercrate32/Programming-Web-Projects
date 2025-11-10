@@ -15,7 +15,7 @@ def is_prime(n):
          count += 1
    return True
 
-Write a function primes_up_to(n) that returns a list of primes up to n.
+32. Write a function primes_up_to(n) that returns a list of primes up to n.
 
 def primes_up_to(n):
    prm = []
@@ -34,7 +34,7 @@ def primes_up_to(n):
              prm.append(count)
              count += 1
 
-Write a function matrix_add(a, b) that adds two 2D lists (matrices).
+33. Write a function matrix_add(a, b) that adds two 2D lists (matrices).
 
     def matrix_add(a, b):
        c = []
@@ -45,9 +45,10 @@ Write a function matrix_add(a, b) that adds two 2D lists (matrices).
           while(j < count):
              c.append(a[i][j] + b[i][j])
 
-Write a function transpose(matrix) that returns the transpose of a 2D list.
-
-
+34. Write a function transpose(matrix) that returns the transpose of a 2D list.
+ 
+def transpose(matrix):
+      
 
 Write a function flatten(lst) that flattens a 2D list into a 1D list.
 
