@@ -48,7 +48,19 @@ def primes_up_to(n):
 34. Write a function transpose(matrix) that returns the transpose of a 2D list.
  
 def transpose(matrix):
-      
+      create list   
+      create index variable
+      loop through matrix list
+      inside loop, take each element and append it to the new list, in a position one step further than the last in the matrix list position.  
+      lst = [[]]
+      i = 0
+      while(i < len(matrix)):
+         if(i != len(matrix) - 1):
+            lst[i + 1] = matrix[i]
+            i += 1
+         else:
+            lst[0] = maxtrix[i]
+            return lst
 
 Write a function flatten(lst) that flattens a 2D list into a 1D list.
 
