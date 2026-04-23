@@ -1,0 +1,112 @@
+$scenario = isset($_POST["scenario"])? $_POST["scenario"] : null;
+  $nic_speed = isset($_POST["nic_speed"])? $_POST["nic_speed"] : null;
+  $num_nics = isset($_POST["num_nics"])? $_POST["num_nics"] : null;
+  $nic_type = isset($_POST["nic_type"])? $_POST["nic_type"] : null;
+  $os = isset($_POST["os"])? implode(", ", $_POST["os"]) : null;
+  $SMP = isset($_POST["SMP"])? implode(", ", $_POST["SMP"]) : null;
+  $network_type = isset($_POST["network_type"])? implode(", ", $_POST["network_type"]) : null;
+  $bandwidth_info = isset($_POST["bandwidth_info"])? $_POST["bandwidth_info"] : null;
+  $Expected = isset($_POST["Expected"])? $_POST["Expected"] : null;
+  $Other_ER = isset($_POST["Other_ER"])? implode(", ", $_POST["Other_ER"]) : null;
+ 
+
+
+
+
+
+<h2>What are your RoCE Networking Solution requirements?</h2>
+        <p><strong>1. Please provide us with your RoCE Network application scenarios and basic needs</strong></p>
+        
+        <div class="form-group">
+            <label>Scenario *</label>
+            <div class="checkbox-group">
+                <label><input type="radio" name="scenario2"> Deep Learning</label>
+                <label><input type="radio" name="scenario2"> High-performance computing</label>
+                <label><input type="radio" name="scenario2"> Data center</label>
+                <label><input type="radio" name="scenario2"> Cloud scenario</label>
+                <label><input type="radio" name="scenario2"> Other</label>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label>NIC Speed *</label>
+            <input type="text" name="nic_speed" placeholder="Enter more details">
+        </div>
+        
+        <div class="form-group">
+            <label>Number of NICs</label>
+            <div class="counter">
+                <button type="button" onclick="decrease('num_nics')">-</button>
+                <input type="number" id="num_nics" name="num_nics" value="1" min="1">
+                <button type="button" onclick="increase('num_nics')">+</button>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label>NIC Type</label>
+            <input type="text" name="nic_type" placeholder="Enter more details">
+        </div>
+        
+        <div class="form-group">
+            <label>Operating System *</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="os2[]"> Microsoft Windows Server</label>
+                <label><input type="checkbox" name="os2[]"> VMware ESXi</label>
+                <label><input type="checkbox" name="os2[]"> Red Hat Enterprise Linux</label>
+                <label><input type="checkbox" name="os2[]"> CentOS</label>
+                <label><input type="checkbox" name="os2[]"> Other</label>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label>Switch Management Platform</label>
+            <input type="text" name="SMP" placeholder="Enter more details">
+        </div>
+	<p><strong>2. Please provide us with your ROCE Network business needs</p>
+        
+            <div class="form-group">
+                <label>Network Type *</label><br>
+                <input type="checkbox" name="network_type2[]"> Spine
+                <input type="checkbox" name="network_type2[]"> Leaf
+                <input type="checkbox" name="network_type2[]"> Server
+                <input type="checkbox" name="network_type2[]"> Other
+            </div>
+            <div class="form-group">
+                <label>Bandwidth Information *</label><br>
+                <input type="checkbox" name="bandwidth_info[]"> 400G
+                <input type="checkbox" name="bandwidth_info[]"> 200G
+                <input type="checkbox" name="bandwidth_info[]"> 100G
+                <input type="checkbox" name="bandwidth_info[]"> 40G
+                <input type="checkbox" name="bandwidth_info[]"> Other
+            </div>
+            <div class="form-group">
+                <label>Expected Convergence Ratio</label><br>
+                <input type="text" name="Expected" placeholder="Enter more details">
+            </div>
+            <div class="form-group">
+                <label>Other Equipment Requirements</label><br>
+                <input type="checkbox" name="Other_ER[]"> Server
+                <input type="checkbox" name="Other_ER[]"> Switching
+                <input type="checkbox" name="Other_ER[]"> Optical Transceivers
+                <input type="checkbox" name="Other_ER[]"> Cables
+            </div>
+            <div class="form-group">
+                <label>Leave a message for other project descriptions in detail</label>
+                <textarea name="TBox1" placeholder="We are capable of working out a professional solution to maximize the utilization of the equipment..."></textarea>
+            </div>
+            <div class="form-group">
+                <label>Upload File</label>
+                <input type="file" name="file_upload2">
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+

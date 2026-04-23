@@ -1,0 +1,27 @@
+ <?php
+  
+  $Scenario = isset($_POST["scenario"])? $_POST["scenario"] : null;
+  $Gpu_type = isset($_POST["gpu_type"])? $_POST["gpu_type"] : null;
+  $Num_gpus = isset($_POST["num_gpus"])? $_POST["num_gpus"] : null;
+  $OS = isset($_POST['os'])? $_POST['os'] : null;
+  //echo "$Scenario";
+  //echo "$Gpu_type";
+  //echo "$Num_gpus";
+
+
+?>
+
+
+<!DOCTYPE html>
+<html>
+<title> Backend Stuff </title>
+<body>
+<?php
+  echo "$Scenario";
+  echo "$Gpu_type";
+  echo "$Num_gpus";
+  //echo implode("<br> , ", $OS);
+?>
+</body>
+</html>
+

@@ -1,0 +1,201 @@
+<?php
+// Database connection
+$mysqli = new mysqli('localhost', 'ddavis32', 'cmsunite', 'ddavis_db2');
+
+if ($mysqli->connect_errno) {
+    echo "Failed to connect to MySQL: " . $mysqli->connect_error;
+    exit();
+}
+
+// Handling the form submission
+$result = null;
+$result2 = null;
+$result3 = null;
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $searchType = $_POST['search_type'];
+    $searchValue = trim($_POST['search_value']);
+
+    if ($searchType == 'all') {
+        $query = "SELECT * FROM user2";  // replace 'users' with your table name
+        $stmt = $mysqli->prepare($query);
+    } else {
+        $query = "SELECT * FROM user2 WHERE $searchType = ?";
+        $stmt = $mysqli->prepare($query);
+        $stmt->bind_param('s', $searchValue);
+    }
+
+    if ($stmt) {
+        $stmt->execute();
+        $result = $stmt->get_result();
+    } else {
+        echo "Query Error: " . $mysqli->error;
+    }
+
+    $searchType2 = $_POST['search_type2'];
+    $searchValue2 = trim($_POST['search_value2']);
+
+    if ($searchType2 == 'all') {
+        $query2 = "SELECT * FROM submission2";  // replace 'users' with your table name
+        $stmt2 = $mysqli->prepare($query2);
+    } else {
+        $query2 = "SELECT * FROM submission2 WHERE $searchType2 = ?";
+        $stmt2 = $mysqli->prepare($query2);
+        $stmt2->bind_param('s', $searchValue2);
+    }
+
+    if ($stmt2) {
+        $stmt2->execute();
+        $result2 = $stmt2->get_result();
+    } else {
+        echo "Query Error: " . $mysqli->error;
+    }
+
+    $searchType3 = $_POST['search_type3'];
+    $searchValue3 = trim($_POST['search_value3']);
+
+    if ($searchType3 == 'all') {
+        $query3 = "SELECT * FROM response2";  // replace 'users' with your table name
+        $stmt3 = $mysqli->prepare($query3);
+    } else {
+        $query3 = "SELECT * FROM response2 WHERE $searchType3 = ?";
+        $stmt3 = $mysqli->prepare($query3);
+        $stmt3->bind_param('s', $searchValue3);
+    }
+
+    if ($stmt3) {
+        $stmt3->execute();
+        $result3 = $stmt3->get_result();
+    } else {
+        echo "Query Error: " . $mysqli->error;
+    }
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View User Info</title>
+</head>
+<body>    
+    <form method="POST" action="">
+	<h2>Search User Info</h2>
+        <label for="search_type">Select Search Type:</label>
+        <select name="search_type" id="search_type">
+            <option value="all">All Users</option>
+            <option value="id">By ID</option>
+            <option value="name">By Username</option>
+            <option value="email">By Email</option>
+            <!-- Add more options if needed -->
+        </select><br><br>
+
+        <label for="search_value">Search Value (if not 'All'):</label>
+        <input type="text" name="search_value" id="search_value"><br><br>
+
+
+	<h2>Search Submission Info</h2>
+        <label for="search_type2">Select Search Type:</label>
+        <select name="search_type2" id="search_type2">
+            <option value="all">All Submissions</option>
+            <option value="id">By ID</option>
+            <option value="user_id">By User ID</option>
+            <option value="submitted_at">By Submission Time</option>
+            <!-- Add more options if needed -->
+        </select><br><br>
+
+        <label for="search_value2">Search Value (if not 'All'):</label>
+        <input type="text" name="search_value2" id="search_value2"><br><br>
+
+
+	<h2>Search Response Info</h2>
+        <label for="search_type3">Select Search Type:</label>
+        <select name="search_type3" id="search_type3">
+            <option value="all">All Responses</option>
+            <option value="id">By ID</option>
+            <option value="submission_id">By Submission ID</option>
+            <option value="question">By Question</option>
+	    <option value="answer">By Answer</option>
+            <!-- Add more options if needed -->
+        </select><br><br>
+
+        <label for="search_value3">Search Value (if not 'All'):</label>
+        <input type="text" name="search_value3" id="search_value3"><br><br>
+
+        <button type="submit">Search</button>
+    </form>
+
+    <?php if ($result): ?>
+        <h3>Results:</h3>
+        <table border="1" cellpadding="5" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <!-- Add more columns if needed -->
+                </tr>
+            </thead>
+            <tbody>
+                <?php while ($row = $result->fetch_assoc()): ?>
+                <tr>
+                    <td><?= htmlspecialchars($row['id']) ?></td>
+                    <td><?= htmlspecialchars($row['name']) ?></td>
+                    <td><?= htmlspecialchars($row['email']) ?></td>
+                    <!-- Add more cells if needed -->
+                </tr>
+                <?php endwhile; ?>
+            </tbody>
+        </table>
+    <?php endif; ?>
+
+    <?php if ($result2): ?>
+        <h3>Results:</h3>
+        <table border="1" cellpadding="5" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>User_ID</th>
+                    <th>Submission Time</th>
+                    <!-- Add more columns if needed -->
+                </tr>
+            </thead>
+            <tbody>
+                <?php while ($row2 = $result2->fetch_assoc()): ?>
+                <tr>
+                    <td><?= htmlspecialchars($row2['id']) ?></td>
+                    <td><?= htmlspecialchars($row2['user_id']) ?></td>
+                    <td><?= htmlspecialchars($row2['submitted_at']) ?></td>
+                    <!-- Add more cells if needed -->
+                </tr>
+                <?php endwhile; ?>
+            </tbody>
+        </table>
+    <?php endif; ?>
+
+    <?php if ($result3): ?>
+        <h3>Results:</h3>
+        <table border="1" cellpadding="5" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Submission ID</th>
+		    <th>Question</th>
+		    <th>Answer</th>
+                    <!-- Add more columns if needed -->
+                </tr>
+            </thead>
+            <tbody>
+                <?php while ($row3 = $result3->fetch_assoc()): ?>
+                <tr>
+                    <td><?= htmlspecialchars($row3['id']) ?></td>
+                    <td><?= htmlspecialchars($row3['submission_id']) ?></td>
+                    <td><?= htmlspecialchars($row3['question']) ?></td>
+		    <td><?= htmlspecialchars($row3['answer']) ?></td>
+                    <!-- Add more cells if needed -->
+                </tr>
+                <?php endwhile; ?>
+            </tbody>
+        </table>
+    <?php endif; ?>
+
+</body>
+</html>
